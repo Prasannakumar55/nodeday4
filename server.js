@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/Routing', Authprocess)
+app.use('/auth', Authprocess)
 
 app.get('/', (req, res) => {
     res.send("Auth Process");
